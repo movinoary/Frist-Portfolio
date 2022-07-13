@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import * as cssModule from "../../scss/index";
-import * as GrIcons from "react-icons/gr";
-import * as FaIcons from "react-icons/fa";
 import * as Card from "./index";
 
 const CardProjek = ({ item }) => {

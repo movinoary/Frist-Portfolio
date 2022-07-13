@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as cssModule from "../scss/index";
-import * as Card from "./card/index";
 
 const Skill = () => {
   const [clickOne, setClickOne] = useState(false);
