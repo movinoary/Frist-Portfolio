@@ -1,0 +1,351 @@
+@import "./Variable.scss";
+
+.cardProjek {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 300px;
+  background-color: $gray700;
+  transition: $transSlowlyIn;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px rgba($color: $gray100, $alpha: 0.2);
+
+  .projekTitle {
+    @include coloumn();
+    align-items: center;
+    width: 100%;
+    h1 {
+      color: $gray100;
+      font-size: $fontL;
+      font-family: $fontPoiret;
+      margin-bottom: 7px;
+    }
+
+    img {
+      @include maxWH();
+      transition: $transFastIn;
+    }
+  }
+
+  .projekDesc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: $transSlowlyIn;
+    width: 20%;
+
+    .iconLeft {
+      @include coloumn();
+      align-items: center;
+      justify-content: center;
+      width: 0;
+      height: 100%;
+      font-size: 0;
+      transition: $transMediumIn;
+      background-color: $gray001;
+      span {
+        height: 0;
+        width: 0;
+        padding: 0;
+        font-size: 0;
+        margin: 0;
+        transition: $transMediumOut;
+      }
+    }
+
+    .iconRight {
+      @include maxWH();
+      @include coloumn();
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      background-color: $gray001;
+      transition: $transMediumIn;
+
+      .iconLink {
+        display: flex;
+      }
+
+      span {
+        @include hw60();
+        font-size: 3rem;
+        margin: 5px 0;
+        color: $gray500;
+        transition: $transMediumIn;
+      }
+
+      .html {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #ebebeb;
+          color: #e34c26;
+          transition: $transMediumOut;
+        }
+      }
+
+      .javaScript {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #f0db4f;
+          color: #323330;
+          transition: $transMediumOut;
+        }
+      }
+
+      .nodeJs {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #233056;
+          color: #026e00;
+          transition: $transMediumOut;
+        }
+      }
+
+      .reactJs {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #20232a;
+          color: #61dafb;
+          transition: $transMediumOut;
+        }
+      }
+
+      .github {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #161b22;
+          color: #f0f6fc;
+          transition: $transMediumOut;
+        }
+      }
+
+      .firefox {
+        &:hover {
+          @include hw60();
+          border-radius: 50%;
+          background-color: #08204e;
+          color: #80ebff;
+          transition: $transMediumOut;
+        }
+      }
+    }
+    p {
+      color: $gray100;
+      font-size: 0;
+      transition: 0.7s;
+    }
+  }
+}
+
+.modalProjek {
+  width: 100%;
+  height: 400px;
+  transition: $transSlowlyOut;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: $gray700;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+
+  .projekTitle {
+    @include coloumn();
+    align-items: center;
+    width: 75%;
+    h1 {
+      font-size: $fontL;
+      font-family: $fontPoiret;
+      color: $gray100;
+      margin-bottom: 7px;
+    }
+
+    img {
+      @include maxWH();
+      transition: $transSlowlyOut;
+    }
+  }
+
+  .projekDesc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    transition: $transSlowlyOut;
+
+    .iconLeft {
+      background-color: $gray001;
+      width: 50%;
+      height: 100%;
+      @include coloumn();
+      align-items: center;
+      justify-content: center;
+      transition: $transMediumIn;
+
+      span {
+        @include hw50();
+        font-size: 2.5rem;
+        color: $gray500;
+        margin: 5px 0;
+        transition: $transMediumOut;
+      }
+
+      .html {
+        @include hw50();
+        border-radius: 50%;
+        background-color: #ebebeb;
+        color: #e34c26;
+        transition: $transMediumOut;
+      }
+
+      .javaScript {
+        @include hw50();
+        border-radius: 50%;
+        background-color: #f0db4f;
+        color: #323330;
+        transition: $transMediumOut;
+      }
+    }
+
+    .iconRight {
+      @include maxWH();
+      @include coloumn();
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 50% 50% 0;
+      background-color: $gray001;
+      transition: $transMediumIn;
+
+      .iconLink {
+        display: flex;
+      }
+
+      span {
+        @include hw70();
+        font-size: $fontXL;
+        color: $gray500;
+        margin: 5px 0;
+        transition: $transMediumIn;
+      }
+
+      .html {
+        &:hover {
+          @include hw70();
+          border-radius: 50%;
+          background-color: #ebebeb;
+          color: #e34c26;
+          transition: $transMediumOut;
+        }
+      }
+
+      .javaScript {
+        &:hover {
+          @include hw70();
+          border-radius: 50%;
+          background-color: #f0db4f;
+          color: #323330;
+          transition: $transMediumOut;
+        }
+      }
+
+      .nodeJs {
+        &:hover {
+          @include hw70();
+          background-color: #233056;
+          border-radius: 50%;
+          color: #026e00;
+          transition: $transMediumOut;
+        }
+      }
+
+      .reactJs {
+        &:hover {
+          @include hw70();
+          border-radius: 50%;
+          background-color: #20232a;
+          color: #61dafb;
+          transition: $transMediumOut;
+        }
+      }
+
+      .github {
+        &:hover {
+          @include hw70();
+          border-radius: 50%;
+          background-color: #161b22;
+          color: #f0f6fc;
+          transition: $transMediumOut;
+        }
+      }
+
+      .firefox {
+        &:hover {
+          @include hw70();
+          border-radius: 50%;
+          background-color: #08204e;
+          color: #80ebff;
+          transition: $transMediumOut;
+        }
+      }
+    }
+
+    p {
+      margin: 0 20px;
+      font-size: 1.5rem;
+      color: $gray100;
+      text-align: justify;
+      font-family: $fontPoppins;
+      transition: $transSlowlyIn;
+    }
+  }
+}
+
+.cardStoryLeft {
+  @include maxWH();
+  h1 {
+    background-color: $gray400;
+    @include titleMedium();
+    span {
+      color: $gray000;
+      margin: 0 10px;
+    }
+  }
+  div {
+    @include coloumn();
+    margin-top: 1rem;
+
+    p {
+      margin: 10px 0 10px 3%;
+      width: 95%;
+      @include paragraf();
+    }
+    p:nth-child(2) {
+      margin: 10px 0 10px 5%;
+    }
+  }
+}
+
+.cardStoryRight {
+  @include maxWH();
+
+  h1 {
+    border-bottom: 3px solid $gray400;
+    text-align: right;
+    @include titleMedium();
+
+    span {
+      color: $gray000;
+      margin: 0 10px;
+    }
+  }
+  div {
+    margin-top: 1rem;
+    p {
+      width: 95%;
+      @include paragraf();
+    }
+  }
+}

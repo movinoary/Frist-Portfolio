@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Major+Mono+Display&family=Poiret+One&family=Poppins:wght@300;400&family=Single+Day&display=swap");
+
+// Color
+$gray800: #000000;
+$gray700: #323643;
+$gray600: #393e46;
+$gray500: #606470;
+$gray400: #929aab;
+$gray300: #d6d6d6;
+$gray200: #eeeeee;
+$gray100: #f7f7f7;
+$gray000: #ffffff;
+$gray001: #93deff;
+
+// Font Size
+$fontXXL: 6em;
+$fontXXM: 4em;
+$fontXL: 3.5em;
+$fontL: 2em;
+$fontM: 1.25em;
+$fontS: 1em;
+
+// Font Family
+$fontMajor: "Major Mono Display", monospace;
+$fontPoiret: "Poiret One", cursive;
+$fontPoppins: "Poppins", sans-serif;
+$fontSingel: "Single Day", cursive;
+$fontKosugi: "Kosugi Maru", sans-serif;
+
+// Trassition
+$transFastIn: 0.3s all ease-in;
+$transFastOut: 0.3s all ease-out;
+$transMediumIn: 0.5s all ease-in;
+$transMediumOut: 0.5s all ease-out;
+$transSlowIn: 0.7s all ease-in;
+$transSlowOut: 0.7s all ease-out;
+$transSlowlyIn: 1s all ease-in;
+$transSlowlyOut: 1s all ease-out;
+
+@mixin coloumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin maxWH {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin hw50 {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+
+@mixin hw60 {
+  height: 60px;
+  width: 60px;
+  padding: 5px 6px;
+}
+
+@mixin hw70 {
+  height: 70px;
+  width: 70px;
+  padding: 6px 7px;
+}
+
+@mixin titleMedium {
+  font-size: $fontXL;
+  font-family: $fontMajor;
+  padding: 7px 25px;
+  color: $gray700;
+}
+
+@mixin titleBig {
+  font-size: $fontXXL;
+  font-family: $fontMajor;
+}
+
+@mixin paragraf {
+  font-weight: 300;
+  text-align: justify;
+  color: $gray700;
+  font-family: $fontPoppins;
+  font-size: 1.8rem;
+}
