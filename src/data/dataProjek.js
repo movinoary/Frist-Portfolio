@@ -196,7 +196,7 @@ export const DataProjek = [
         id: 2,
         icon: <FaIcons.FaGithub />,
         class: cssModule.Card.github,
-        link: "https://github.com/movinoary/SimpleBlog",
+        link: "https://github.com/movinoary/SD-jatihatayu-IV-Client-pertama-",
       },
     ],
   },
