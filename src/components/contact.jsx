@@ -23,33 +23,33 @@ const Contact = () => {
   return (
     <section className={cssModule.Components.contact} id="contact">
       <div className={cssModule.Components.contactTop}>
-        <h1 data-aos="fade-up" data-aos-duration="1000">
+        <h1>
           tHan<span>K</span> y<span>O</span>u <span>F</span>o<span>R</span> co
           <span>M</span>in<span>G</span>
         </h1>
-        <h1 data-aos="fade-up" data-aos-duration="1500">
+        <h1>
           i<span>f</span> <span>y</span>ou interes
           <span>ted</span>
         </h1>
-        <h1 data-aos="fade-up" data-aos-duration="2000">
+        <h1>
           le<span>T's</span> co<span>nTA</span>ct <span>M</span>e
         </h1>
       </div>
       <div className={cssModule.Components.contactMiddle}>
         <form onSubmit={sendEmail}>
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div>
             <label htmlFor="name">Hello Vino, My name is</label>
             <input type="text" id="name" name="name" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1500">
+          <div>
             <label htmlFor="email">This is my E-mail</label>
             <input type="email" id="email" name="email" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="2000">
+          <div>
             <label htmlFor="message">I want talk to you about</label>
             <input type="text" id="message" name="message" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="3000">
+          <div>
             <button type="submit" value="Send">
               Send
             </button>
@@ -57,25 +57,13 @@ const Contact = () => {
         </form>
       </div>
       <div className={cssModule.Components.contactBottom}>
-        <a
-          href="https://wa.me/6285156611224"
-          target="_blank"
-          rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <a href="https://wa.me/6285156611224" target="_blank" rel="noreferrer">
           <BsIcons.BsWhatsapp />
           <p>
             +62<span>851</span>5661<span>1224</span>
           </p>
         </a>
-        <a
-          href="https://t.me/vinoarystio"
-          target="_blank"
-          rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-duration="2200"
-        >
+        <a href="https://t.me/vinoarystio" target="_blank" rel="noreferrer">
           <BsIcons.BsTelegram />
           <p>@vinoarystio</p>
         </a>
@@ -83,19 +71,11 @@ const Contact = () => {
           href="https://www.instagram.com/vinoarystio/"
           target="_blank"
           rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-duration="2400"
         >
           <BsIcons.BsInstagram />
           <p>vinoarystio</p>
         </a>
-        <a
-          href="https://github.com/movinoary"
-          target="_blank"
-          rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-duration="2600"
-        >
+        <a href="https://github.com/movinoary" target="_blank" rel="noreferrer">
           <BsIcons.BsGithub />
           <p>movinoary</p>
         </a>
@@ -103,8 +83,6 @@ const Contact = () => {
           href="https://www.linkedin.com/in/vino-arystio-521b15244/"
           target="_blank"
           rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-duration="2800"
         >
           <BsIcons.BsLinkedin />
           <p>

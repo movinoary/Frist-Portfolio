@@ -31,8 +31,8 @@ function App() {
 
   return (
     <>
-      {isLoadng ? (
-        <Components.Loading />
+      <Components.Loading />
+      {/* {isLoadng ? (
       ) : (
         <>
           <Components.Nav />
@@ -53,7 +53,7 @@ function App() {
             </a>
           </div>
         </>
-      )}
+      )} */}
     </>
   );
 }

@@ -9,10 +9,9 @@ const CardProjek = ({ item }) => {
 
   return (
     <section
-      onClick={handleShow}
       className={show ? cssModule.Card.cardProjek : cssModule.Card.modalProjek}
     >
-      <div className={cssModule.Card.projekTitle}>
+      <div className={cssModule.Card.projekTitle} onClick={handleShow}>
         <h1>{item.title}</h1>
         {item.image ? <img src={item.image} alt="projek" /> : null}
         {item.video ? (

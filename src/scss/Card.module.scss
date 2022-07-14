@@ -349,3 +349,102 @@
     }
   }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .cardStoryLeft {
+    h1 {
+      font-size: 2.5em;
+    }
+    div {
+      p {
+        width: 100%;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 10px;
+      }
+      p:nth-child(2) {
+        margin: 0;
+      }
+    }
+  }
+
+  .cardProjek {
+    width: 100%;
+
+    .iconRight {
+      span {
+        @include hw50();
+        font-size: 2.5rem;
+      }
+
+      .html,
+      .javaScript,
+      .nodeJs,
+      .reactJs,
+      .github,
+      .firefox {
+        &:hover {
+          @include hw50();
+        }
+      }
+    }
+  }
+
+  .modalProjek {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    .projekTitle {
+      @include coloumn();
+      align-items: center;
+      width: 100%;
+      h1 {
+        font-size: $fontL;
+        font-family: $fontPoiret;
+        color: $gray100;
+        margin-bottom: 7px;
+      }
+
+      img {
+        @include maxWH();
+        transition: $transSlowlyOut;
+      }
+    }
+
+    .projekDesc {
+      flex-direction: column;
+
+      .iconRight {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 0;
+
+        .iconLink {
+          display: flex;
+        }
+
+        span {
+          @include hw60();
+          font-size: $fontLX;
+        }
+        .html,
+        .javaScript,
+        .nodeJs,
+        .reactJs,
+        .github,
+        .firefox {
+          &:hover {
+            @include hw60();
+          }
+        }
+      }
+
+      p {
+        margin: 10px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
