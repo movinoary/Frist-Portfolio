@@ -595,7 +595,7 @@
     transition: 0.3s ease-in;
 
     div {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: $gray500;
       span {
         color: $gray001;
@@ -605,7 +605,7 @@
     div:nth-child(1) {
       position: absolute;
       font-family: $fontMajor;
-      top: 15%;
+      top: 17%;
       left: 5%;
     }
 
@@ -622,14 +622,14 @@
     div:nth-child(4) {
       position: absolute;
       font-family: $fontSingel;
-      bottom: 15%;
+      bottom: 20%;
       left: 5%;
     }
 
     div:nth-child(5) {
       position: absolute;
       font-family: $fontKosugi;
-      bottom: 30%;
+      bottom: 35%;
       right: 5%;
     }
   }
@@ -761,7 +761,7 @@
   .contact {
     .contactTop {
       h1 {
-        font-size: 3em;
+        font-size: 1.5rem;
         padding: 10px;
         cursor: default;
         font-weight: 600;
@@ -793,29 +793,31 @@
           margin: 10px 0;
           label {
             width: 100%;
-            font-size: $fontL;
+            font-size: 1.5em;
           }
           input {
-            font-size: $fontL;
+            font-size: 1.5em;
             width: 100%;
           }
           button {
             height: 100px;
             width: 100px;
             padding: 5px;
-            margin: 1rem;
+            margin-left: 65%;
+            font-size: 1.5rem;
           }
         }
       }
     }
 
     .contactBottom {
+      flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-top: 0rem;
+      margin-top: -4rem;
       margin-right: 0;
-      padding: 0;
-      height: 10vh;
+      padding: 7% 0 3% 0;
+      height: 100%;
       a {
         font-size: $fontL;
 
