@@ -640,7 +640,7 @@
 
   .iconTop {
     position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
     right: 1rem;
     width: 50px;
     height: 50px;
@@ -816,16 +816,30 @@
       justify-content: flex-start;
       margin-top: -4rem;
       margin-right: 0;
-      padding: 7% 0 3% 0;
+      padding: 3rem 0 1rem 0;
       height: 100%;
       a {
         font-size: $fontL;
+        margin: 15px 20px;
+
+        p {
+          font-size: 1.3rem;
+          width: 100%;
+          height: 100%;
+          margin: 0 5px;
+          transition: $transFastIn;
+          span {
+            margin: 0 5px;
+            transition: $transFastIn;
+          }
+        }
 
         &:hover {
           p {
             @include maxWH();
             font-size: 1.3rem;
-            margin: 0 10px;
+            margin: 0 15px;
+            transition: $transFastIn;
             span {
               margin: 0 5px;
             }
