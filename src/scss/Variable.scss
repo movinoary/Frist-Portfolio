@@ -72,6 +72,7 @@ $transSlowlyOut: 1s all ease-out;
 }
 
 @mixin titleMedium {
+  text-shadow: 0 0 5px rgba($color: $gray600, $alpha: 0.3);
   font-size: $fontXL;
   font-family: $fontMajor;
   padding: 7px 25px;
@@ -79,6 +80,7 @@ $transSlowlyOut: 1s all ease-out;
 }
 
 @mixin titleBig {
+  text-shadow: 0 0 5px rgba($color: $gray600, $alpha: 0.3);
   font-size: $fontXXL;
   font-family: $fontMajor;
 }

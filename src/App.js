@@ -31,29 +31,29 @@ function App() {
 
   return (
     <>
+      {/* <Components.Loading />
       {isLoadng ? (
-        <Components.Loading />
-      ) : (
-        <>
-          <Components.Nav />
-          <Components.Header />
-          <Components.About />
-          <Components.Skill />
-          <Components.Projek />
-          <Components.Contact />
-          <div
-            className={
-              buttonTop
-                ? cssModule.Components.iconTop
-                : cssModule.Components.iconTopHide
-            }
-          >
-            <a href="#home">
-              <FaIcons.MdDoubleArrow />
-            </a>
-          </div>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Components.Nav />
+        <Components.Header />
+        <Components.About />
+        <Components.Skill />
+        <Components.Projek />
+        <Components.Contact />
+        <div
+          className={
+            buttonTop
+              ? cssModule.Components.iconTop
+              : cssModule.Components.iconTopHide
+          }
+        >
+          <a href="#home">
+            <FaIcons.MdDoubleArrow />
+          </a>
+        </div>
+      </>
+      {/* )} */}
     </>
   );
 }

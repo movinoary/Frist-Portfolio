@@ -1,3 +1,4 @@
 import { DataProjek } from "./dataProjek";
+import { DataSkill } from "./dataSkill";
 
-export { DataProjek };
+export { DataProjek, DataSkill };

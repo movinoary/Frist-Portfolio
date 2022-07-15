@@ -3,6 +3,8 @@ import * as DiIcons from "react-icons/di";
 import * as GrIcons from "react-icons/gr";
 import * as FaIcons from "react-icons/fa";
 import * as TbIcons from "react-icons/tb";
+import * as SiIcons from "react-icons/si";
+import * as RiIcons from "react-icons/ri";
 import * as cssModule from "../scss/index";
 
 export const DataProjek = [
@@ -35,6 +37,33 @@ export const DataProjek = [
         link: "https://demo-sd.netlify.app/",
       },
     ],
+    tech: [
+      {
+        id: 1,
+        icon: <FaIcons.FaSass />,
+        class: cssModule.Card.sass,
+      },
+      {
+        id: 2,
+        icon: <GrIcons.GrMysql />,
+        class: cssModule.Card.mySql,
+      },
+      {
+        id: 2,
+        icon: <SiIcons.SiFramer />,
+        class: cssModule.Card.framer,
+      },
+      {
+        id: 4,
+        icon: <SiIcons.SiSequelize />,
+        class: cssModule.Card.sequelize,
+      },
+      {
+        id: 5,
+        icon: <RiIcons.RiReactjsLine />,
+        class: cssModule.Card.reactJs,
+      },
+    ],
   },
   {
     id: 2,
@@ -63,6 +92,33 @@ export const DataProjek = [
         icon: <GrIcons.GrFirefox />,
         class: cssModule.Card.firefox,
         link: "https://let-s-go-productive.vercel.app/",
+      },
+    ],
+    tech: [
+      {
+        id: 1,
+        icon: <FaIcons.FaSass />,
+        class: cssModule.Card.sass,
+      },
+      {
+        id: 2,
+        icon: <GrIcons.GrMysql />,
+        class: cssModule.Card.mySql,
+      },
+      {
+        id: 4,
+        icon: <SiIcons.SiSequelize />,
+        class: cssModule.Card.sequelize,
+      },
+      {
+        id: 5,
+        icon: <RiIcons.RiReactjsLine />,
+        class: cssModule.Card.reactJs,
+      },
+      {
+        id: 5,
+        icon: <SiIcons.SiSocketdotio />,
+        class: cssModule.Card.socket,
       },
     ],
   },
@@ -95,6 +151,33 @@ export const DataProjek = [
         link: "https://let-s-go-productive.vercel.app/",
       },
     ],
+    tech: [
+      {
+        id: 1,
+        icon: <FaIcons.FaCss3Alt />,
+        class: cssModule.Card.css,
+      },
+      {
+        id: 2,
+        icon: <GrIcons.GrMysql />,
+        class: cssModule.Card.mySql,
+      },
+      {
+        id: 3,
+        icon: <SiIcons.SiSequelize />,
+        class: cssModule.Card.sequelize,
+      },
+      {
+        id: 4,
+        icon: <RiIcons.RiReactjsLine />,
+        class: cssModule.Card.reactJs,
+      },
+      {
+        id: 5,
+        icon: <SiIcons.SiSocketdotio />,
+        class: cssModule.Card.socket,
+      },
+    ],
   },
   {
     id: 4,
@@ -122,6 +205,108 @@ export const DataProjek = [
   },
   {
     id: 5,
+    title: "Let's go Productive",
+    image: Img.WebOne,
+    desc: "When i search costume desktop windows. I don't find custom desktop style in my pc i want. And i found one web include what i want, but problem is wallpaper no good for me. Finally i think to create once web for me to productive in work. This is simple Web, but in web powerfull to me. Deficiency for me is, We must open web browser to run this. i made this less more one week.",
+    create: [
+      {
+        id: 1,
+        icon: <FaIcons.FaHtml5 />,
+        class: cssModule.Card.html,
+      },
+      {
+        id: 2,
+        icon: <DiIcons.DiJavascript1 />,
+        class: cssModule.Card.javaScript,
+      },
+      {
+        id: 3,
+        icon: <FaIcons.FaGithub />,
+        class: cssModule.Card.github,
+        link: "https://github.com/movinoary/Let-s-go-productive",
+      },
+      {
+        id: 4,
+        icon: <GrIcons.GrFirefox />,
+        class: cssModule.Card.firefox,
+        link: "https://let-s-go-productive.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "E-xommerc",
+    image: Img.webEXommer,
+    desc: "I'm here to help my friend who is in need of a web, I'm here to work on the front-end only, while my friend is working on the backend.",
+    create: [
+      {
+        id: 1,
+        icon: <FaIcons.FaReact />,
+        class: cssModule.Card.reactJs,
+      },
+      {
+        id: 2,
+        icon: <FaIcons.FaGithub />,
+        class: cssModule.Card.github,
+        link: "https://github.com/movinoary/e-xommercs",
+      },
+      {
+        id: 3,
+        icon: <GrIcons.GrFirefox />,
+        class: cssModule.Card.firefox,
+        link: "https://e-xommerce.netlify.app/",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Blog",
+    image: Img.webTwoOne,
+    desc: "development of simpleBlog. I create with Node Js for back-end, Handlebars for Display Show, BootStrap for CSS, and PostgreSQL for Database. I've implemented a login, see the posts based on who made it, and the blog details are up and running. I made it in a one week",
+    create: [
+      {
+        id: 1,
+        icon: <SiIcons.SiHandlebarsdotjs />,
+        class: cssModule.Card.html,
+      },
+      {
+        id: 2,
+        icon: <FaIcons.FaNodeJs />,
+        class: cssModule.Card.nodeJs,
+      },
+      {
+        id: 3,
+        icon: <FaIcons.FaGithub />,
+        class: cssModule.Card.github,
+        link: "https://github.com/movinoary/B1-C2/",
+      },
+      {
+        id: 4,
+        icon: <GrIcons.GrFirefox />,
+        class: cssModule.Card.firefox,
+        link: "https://simple-blog-three.vercel.app/",
+      },
+    ],
+    tech: [
+      {
+        id: 1,
+        icon: <FaIcons.FaBootstrap />,
+        class: cssModule.Card.bootstrap,
+      },
+      {
+        id: 2,
+        icon: <DiIcons.DiJavascript1 />,
+        class: cssModule.Card.javaScript,
+      },
+      {
+        id: 2,
+        icon: <SiIcons.SiPostgresql />,
+        class: cssModule.Card.postgre,
+      },
+    ],
+  },
+  {
+    id: 8,
     title: "simpleBlog",
     image: Img.webTwo,
     desc: "This Web I Create in BootCamp DumbWays.id Frist Task. Feature is You can E-mail to me in web automatic open E-mail App in desktop . Link to social media active. Add Project Active. Edit, delete no active, because i create no BackEnd. The problem is if you add projek, detail-projek not working. Because the route no auto create in html. i made this one week.",
@@ -151,38 +336,7 @@ export const DataProjek = [
     ],
   },
   {
-    id: 6,
-    title: "Let's go Productive",
-    image: Img.WebOne,
-    desc: "When i search costume desktop windows. I don't find custom desktop style in my pc i want. And i found one web include what i want, but problem is wallpaper no good for me. Finally i think to create once web for me to productive in work. This is simple Web, but in web powerfull to me. Deficiency for me is, We must open web browser to run this. i made this less more one week.",
-    create: [
-      {
-        id: 1,
-        icon: <FaIcons.FaHtml5 />,
-        class: cssModule.Card.html,
-      },
-      {
-        id: 2,
-        icon: <DiIcons.DiJavascript1 />,
-        class: cssModule.Card.javaScript,
-      },
-      {
-        id: 3,
-        icon: <FaIcons.FaGithub />,
-        class: cssModule.Card.github,
-        link: "https://github.com/movinoary/Let-s-go-productive",
-      },
-      {
-        id: 4,
-        icon: <GrIcons.GrFirefox />,
-        class: cssModule.Card.firefox,
-        link: "https://let-s-go-productive.vercel.app/",
-      },
-    ],
-  },
-
-  {
-    id: 7,
+    id: 9,
     title: "SD Jatirahayu v.1",
     video: Img.sdv1,
     desc: "This is my first project. That makes me feel this is my world. I think there are still many shortcomings here due to inappropriate margins and messy designs. Maybe because this my first project. It even took 2 months to make it, and my code is so messy. this project i don't implement backend. So that i make data dummy or static data. What can't be arranged. I deploy for Local Server at school.",
@@ -201,16 +355,3 @@ export const DataProjek = [
     ],
   },
 ];
-
-// tech: [
-//     {
-//       id: 1,
-//       icon: <FaIcons.FaHtml5 />,
-//       class: cssModule.Card.html,
-//     },
-//     {
-//       id: 2,
-//       icon: <DiIcons.DiJavascript1 />,
-//       class: cssModule.Card.javaScript,
-//     },
-//   ],
