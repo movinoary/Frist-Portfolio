@@ -11,7 +11,7 @@ const Loading = () => {
         data-aos-easing="ease-in-in"
       >
         <h1>
-          <span>W</span>e<span>l</span>come
+          <span>H</span>i<span>,,</span>
         </h1>
       </div>
       <div
@@ -21,7 +21,7 @@ const Loading = () => {
         data-aos-easing="ease-in-in"
       >
         <h1>
-          SEL<span>A</span>MAT DAT<span>A</span>NG
+          H<span>A</span>LL<span>O</span>
         </h1>
       </div>
       <div
