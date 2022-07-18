@@ -614,6 +614,99 @@
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .cardStoryLeft {
+    h1 {
+      font-size: $fontLX;
+    }
+    div {
+      p {
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        font-size: $fontM;
+      }
+      p:nth-child(2) {
+        margin: 0px;
+      }
+    }
+  }
+
+  .cardProjek {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+  }
+
+  .modalProjek {
+    width: 100%;
+    height: 50rem;
+    flex-direction: column;
+
+    .projekTitle {
+      @include coloumn();
+      align-items: center;
+      width: 100%;
+      h1 {
+        font-size: $fontL;
+        font-family: $fontPoiret;
+        color: $gray100;
+        margin-bottom: 7px;
+      }
+
+      img {
+        @include maxWH();
+        transition: $transSlowlyOut;
+      }
+    }
+
+    .projekDesc {
+      flex-direction: column;
+
+      .iconLeft {
+        width: 100%;
+        flex-direction: row;
+
+        span {
+          margin: 10px 10px;
+        }
+      }
+
+      .iconRight {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 0;
+
+        .iconLink {
+          display: flex;
+        }
+
+        span {
+          @include hw60();
+          font-size: $fontLX;
+        }
+        .html,
+        .javaScript,
+        .nodeJs,
+        .reactJs,
+        .github,
+        .firefox {
+          &:hover {
+            @include hw60();
+          }
+        }
+      }
+
+      p {
+        padding: 10px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .cardStoryLeft {
     h1 {
@@ -654,65 +747,12 @@
     }
   }
 
+  .skillTopTitle {
+    font-size: $fontL;
+  }
+
   .modalProjek {
     width: 100%;
     height: 100%;
-    flex-direction: column;
-
-    .projekTitle {
-      @include coloumn();
-      align-items: center;
-      width: 100%;
-      h1 {
-        font-size: $fontL;
-        font-family: $fontPoiret;
-        color: $gray100;
-        margin-bottom: 7px;
-      }
-
-      img {
-        @include maxWH();
-        transition: $transSlowlyOut;
-      }
-    }
-
-    .projekDesc {
-      flex-direction: column;
-
-      .iconRight {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 0;
-
-        .iconLink {
-          display: flex;
-        }
-
-        span {
-          @include hw60();
-          font-size: $fontLX;
-        }
-        .html,
-        .javaScript,
-        .nodeJs,
-        .reactJs,
-        .github,
-        .firefox {
-          &:hover {
-            @include hw60();
-          }
-        }
-      }
-
-      p {
-        margin: 10px;
-        font-size: 1.1rem;
-      }
-    }
-  }
-
-  .skillTopTitle {
-    font-size: $fontL;
   }
 }
